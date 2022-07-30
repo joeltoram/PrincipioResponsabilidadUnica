@@ -1,4 +1,4 @@
-<?php include 'vendor/autoload.php';
+<?php include_once 'vendor/autoload.php';
 
 use App\CoffeeShop;
 
@@ -14,4 +14,4 @@ $shop->addProducts($products);
 
 $menu = new \App\Menu();
 
-echo $Menu->view($shop->getProducts());
+echo $Menu->view($shop->getProducts(), new \App\JsonMenuOutput());
